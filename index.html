@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <form id="form">
+        <input type="search" id="query" name="q" placeholder="Search..." />
+        <button>Search</button>
+      </form>
+      <h1><span>Punch</span>Fork</h1>
+      <nav>
+        <ul>
+          <li>Log in</li>
+          <li>Sign up</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="bigItem">
+        <div>
+          <img src="https://picsum.photos/seed/45/500/500" alt="Cat" />
+          <h2>Barbecue beer-can Cabbage</h2>
+          <div class="desciption">
+            <p>66/100 rating</p>
+            <p>Author</p>
+            <p>6 Ingredients</p>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ea
+              alias quasi laboriosam voluptas! Quidem fugiat itaque quia
+              recusandae sint neque expedita. Odit recusandae, molestiae omnis
+              laborum soluta atque minima.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
+              distinctio at, dolorum totam pariatur doloribus alias delectus,
+              magnam illo nostrum tempore nobis eum odio nisi, autem iste cumque
+              quisquam vel.
+            </p>
+          </div>
+          <button class="greyButton">Directions</button>
+          <button class="redButton">Save</button>
+        </div>
+      </article>
+      <section>
+        <h3>More from same author</h3>
+        <article class="sameAuthor">
+          <template id="templateShortList">
+            <div class="listAuthor">
+              <div>
+                <div class="textImg">
+                  <img src="https://picsum.photos/seed/95/200/200" alt="Cat" />
+                  <h4>Name here</h4>
+                </div>
+                <p>Author</p>
+                <p>Time</p>
+                <p>Rating</p>
+              </div>
+            </div>
+          </template>
+        </article>
+      </section>
+      <section class="longList">
+        <h3>Recepices like this</h3>
+        <article class="moreLike">
+          <template id="templateLongList">
+            <div>
+              <div>
+                <img src="" alt="Random Images" />
+                <h4>Name here</h4>
+              </div>
+              <p>Author</p>
+              <p>Time</p>
+              <p>Rating</p>
+            </div>
+          </template>
+        </article>
+      </section>
+    </main>
+    <footer>This is a student project</footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Root elements*/
+:root {
+  --main-colour: red;
+  --secondary-colour: grey;
+  --main-font-colour: black;
+  --secondary-font-colour: white;
+  --heavy-font: "Open Sans", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --body-font-size: 1rem;
+}
+/*Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  font-family: var(--body-font);
+  margin: 2%;
+}
+header h1 span {
+  font-family: var(--heavy-font);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+/*Main*/
+body {
+  font-family: var(--body-font);
+}
+h3 {
+  text-align: center;
+}
+h4 {
+  max-width: fit-content;
+}
+/* .textImg h4 {
+  bottom: -5%;
+  position: absolute;
+  overflow: hidden;
+  max-width: 100%;
+  color: wheat;
+} */
+img {
+  max-width: 100%;
+}
+.bigItem p {
+  max-width: fit-content;
+}
+.desciption {
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+}
+.bigItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Footer*/
+footer {
+  text-align: center;
+}
+/*Respondsivness*/
+@supports (display: grid) {
+  .sameAuthor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .moreLike {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+    padding: 0 6%;
+    max-width: 100%;
+    gap: 1rem;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1100px) {
+  }
+  @media screen and (min-width: 1101px) {
+  }
+}
