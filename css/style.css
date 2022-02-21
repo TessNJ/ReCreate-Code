@@ -9,7 +9,7 @@
 /*Root elements*/
 :root {
   --main-colour: red;
-  --secondary-colour: grey;
+  --secondary-colour: lightgrey;
   --main-font-colour: black;
   --secondary-font-colour: white;
   --heavy-font: "Open Sans", sans-serif;
@@ -68,6 +68,20 @@ img {
 /*Footer*/
 footer {
   text-align: center;
+}
+
+/*Button and :hover*/
+button {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+.greyButton {
+  background-color: var(--secondary-colour);
+}
+.redButton {
+  background-color: var(--main-colour);
+  color: var(--secondary-font-colour);
 }
 /*Respondsivness*/
 @supports (display: grid) {
