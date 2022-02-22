@@ -34,7 +34,7 @@ while (short < 42) {
   }
   myCopy.querySelector(
     "img"
-  ).src = `https://picsum.photos/seed/${short}/200/200`;
+  ).src = `https://picsum.photos/seed/${short}/220/220`;
   //parent
   const parentSecond = document.querySelector(".sameAuthor");
   //append
