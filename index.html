@@ -9,9 +9,15 @@
   </head>
   <body>
     <header>
-      <form id="form">
-        <input type="search" id="query" name="q" placeholder="Search..." />
-        <button>Search</button>
+      <form id="form" role="search">
+        <button class="search">Go</button>
+        <input
+          type="search"
+          id="query"
+          name="q"
+          placeholder="Search..."
+          aria-label="Search through site content"
+        />
       </form>
       <h1><span>Punch</span>Fork</h1>
       <nav>
@@ -51,14 +57,16 @@
         <h3>More from same author</h3>
         <article class="sameAuthor">
           <template id="templateShortList">
-            <div class="listAuthor">
+            <div class="listAuthor hover">
               <div class="textImg">
                 <img src="https://picsum.photos/seed/95/200/200" alt="Cat" />
                 <h4>Name here</h4>
               </div>
-              <p>Author</p>
-              <p>Time</p>
-              <p>Rating</p>
+              <div class="info">
+                <p>Author</p>
+                <p>Time</p>
+                <p>Rating</p>
+              </div>
             </div>
           </template>
         </article>
@@ -67,14 +75,16 @@
         <h3>Recepices like this</h3>
         <article class="moreLike">
           <template id="templateLongList">
-            <div>
+            <div class="hover">
               <div class="textImg">
                 <img src="" alt="Random Images" />
                 <h4>Name here</h4>
               </div>
-              <p>Author</p>
-              <p>Time</p>
-              <p>Rating</p>
+              <div class="info">
+                <p>Author</p>
+                <p>Time</p>
+                <p>52/100</p>
+              </div>
             </div>
           </template>
         </article>

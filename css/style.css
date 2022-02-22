@@ -15,6 +15,7 @@
   --heavy-font: "Open Sans", sans-serif;
   --body-font: "Roboto", sans-serif;
   --body-font-size: 1rem;
+  --hover-out: 0 0 1rem black;
 }
 /*Header*/
 header {
@@ -42,16 +43,12 @@ h3 {
   padding-top: 3%;
   padding-bottom: 1%;
 }
-h4 {
+
+.textImg h4 {
+  background-color: rgba(0, 0, 0, 0.425);
   max-width: fit-content;
+  margin: 0;
 }
-/* .textImg h4 {
-  bottom: -5%;
-  position: absolute;
-  overflow: hidden;
-  max-width: 100%;
-  color: wheat;
-} */
 img {
   max-width: 100%;
 }
@@ -68,16 +65,21 @@ img {
   flex-direction: column;
   align-items: center;
 }
+.info {
+  padding-left: 1%;
+  padding-right: 1%;
+}
 /*Footer*/
 footer {
   text-align: center;
 }
 
-/*Button and :hover*/
+/*Button*/
 button {
   border: none;
   border-radius: 1.5rem;
   padding: 0.5rem 1.5rem;
+  transition: all 0.3s;
 }
 .greyButton {
   background-color: var(--secondary-colour);
@@ -85,6 +87,38 @@ button {
 .redButton {
   background-color: var(--main-colour);
   color: var(--secondary-font-colour);
+}
+/*hover*/
+.greyButton:hover {
+  --secondary-colour: rgb(255, 224, 204);
+  box-shadow: var(--hover-out);
+}
+.redButton:hover {
+  --main-colour: rgb(255, 133, 51);
+  box-shadow: var(--hover-out);
+}
+.hover:hover {
+  box-shadow: var(--hover-out);
+}
+
+/*Search bar*/
+.search {
+  border-radius: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: block;
+  background-color: var(--secondary-colour);
+}
+form {
+  background-color: var(--secondary-colour);
+  align-self: center;
+  align-content: center;
+  padding: 0.05rem;
+  display: flex;
+}
+input {
+  background-color: var(--secondary-colour);
+  border: None;
 }
 /*Respondsivness*/
 @supports (display: grid) {

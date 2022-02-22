@@ -11,7 +11,7 @@ while (count < 36) {
   } else {
     copy.querySelector("h4").textContent = "Beer can Cabbage";
   }
-  copy.querySelector("img").src = `https://picsum.photos/seed/${count}/200/200`;
+  copy.querySelector("img").src = `https://picsum.photos/seed/${count}/300/300`;
   //parent
   const parent = document.querySelector(".moreLike");
   //append
