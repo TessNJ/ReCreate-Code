@@ -96,8 +96,32 @@ img {
 /*Footer*/
 footer {
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+footer nav {
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer nav li {
+  list-style: none;
+}
+footer li span {
+  font-weight: bolder;
+}
+.blackBox {
+  content: "";
+  padding: 8% 15%;
+  background-color: black;
+  max-width: 50%;
+}
+.dontKnow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Button*/
